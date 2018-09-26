@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12 mt-3">
+          <div class="card">
+            <div class="card-header d-flex align-items-start justify-content-between">
+              <h1 class="card-title my-0"><i class="fas fa-user-tag"></i> {{students[whichItem].name}}</h1>
+              <nav class="btn-group">
+                <a class="btn btn-sm btn-secondary" 
+                  href="#/details/{{prevItem}}"><i class="far fa-arrow-alt-circle-left fa-lg"></i></a>
+                <a class="btn btn-sm btn-secondary" 
+                  href="#/"><i class="fas fa-home fa-lg"></i></a>
+                <a class="btn btn-sm btn-secondary" 
+                  href="#/details/{{nextItem}}"><i class="far fa-arrow-alt-circle-right fa-lg"></i></a>
+              </nav>
+            </div>
+            <div class="card-body"
+              ng-model="students">
+              <h4 class="card-title text-dark mt-0">{{students[whichItem].reknown}}</h4>
+              <img class="float-left mr-2 rounded"
+                ng-src="images/{{students[whichItem].shortname}}_tn.jpg"
+                alt="Photo of {{students[whichItem].name}}">
+              <div class="card-text text-secondary">{{students[whichItem].bio}}</div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
