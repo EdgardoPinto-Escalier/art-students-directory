@@ -19,4 +19,4 @@ Simple AngularJS application that shows a directory of art students.
 
 ## DEMO
 
-
+[ARTS STUDENT DIRECTORY](http://arts-students-directory.web-projects.work)
